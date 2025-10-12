@@ -109,3 +109,38 @@ export function CubeSmall() {
     </figure>
   )
 }
+
+
+export function CubeMedium() {
+  const figureRef = useRef(null);
+
+  useEffect(() => {
+    gsap.to(figureRef.current, {
+      rotation: 360,
+      duration: 10,
+      repeat: -1,
+      ease: "none"
+    });
+  }, []);
+  return (
+    <figure
+      ref={figureRef}
+      className="relative overflow-hidden"
+      style={{
+        width: "320px",
+        height: "320px",
+        transform: "rotate(295.565deg)",
+        opacity: 0.5,
+        borderRadius: "inherit"
+      }}
+    >
+      <img
+        src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
+        alt="Cube Small"
+        srcSet="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512 512w, https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp 855w"
+        sizes="320px"
+        className="w-full h-full object-cover object-center rounded-[inherit]"
+      />
+    </figure>
+  )
+}

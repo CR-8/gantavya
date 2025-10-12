@@ -80,13 +80,13 @@ function Navbar() {
           <button 
             onMouseEnter={() => setIsButtonHovered(true)}
             onMouseLeave={() => setIsButtonHovered(false)}
-            className='px-6 py-3 font-semibold rounded-full bg-white text-black hover:border hover:border-neutral-200 hover:bg-blue-600 hover:text-neutral-100 transition-all duration-300 flex items-center gap-2 group'
+            className='px-4 py-3 font-semibold rounded-full bg-white text-black hover:border hover:border-neutral-200 hover:bg-blue-600 hover:text-neutral-100 transition-all duration-300 flex items-center gap-2 group hover:cursor-pointer'
           >
             <span className='text-base'>Register</span>
             <span className='w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white transition-transform duration-300'>
-              <div className='relative w-8 h-8 flex items-center justify-center'>
+              <div className='relative w-10 h-10 flex items-center justify-center'>
                 <ArrowUpRight 
-                  className={`w-6 h-6 flex items-center justify-center inset-0 transition-all duration-700 ${
+                  className={`w-6 h-6 flex items-center justify-center transition-all duration-700 ${
                     isButtonHovered 
                       ? 'opacity-100 rotate-45 bg-neutral-100 rounded-full text-blue-600' 
                       : 'opacity-100 rotate-0'
@@ -99,7 +99,7 @@ function Navbar() {
         <button 
           onMouseEnter={() => setIsScrolledButtonHovered(true)}
           onMouseLeave={() => setIsScrolledButtonHovered(false)}
-          className={`px-6 py-3 font-semibold rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 transition-all duration-500 flex items-center gap-2 ${
+          className={`px-6 py-3 font-semibold rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 transition-all duration-500 flex items-center gap-2 hover:cursor-pointer ${
             isScrolled 
               ? 'opacity-100 translate-x-0' 
               : 'opacity-0 absolute pointer-events-none'
