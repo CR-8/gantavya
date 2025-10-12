@@ -23,7 +23,7 @@ function ForWhom() {
 
     gsap.to(marquee.children, {
       x: -marqueeWidth,
-      duration: 20,
+      duration: 60,
       ease: "none",
       repeat: -1,
       modifiers: {
@@ -55,10 +55,10 @@ function ForWhom() {
 
   return (
     <div className="relative pt-18 min-h-[90vh] w-screen bg-black flex flex-col tracking-tighter">
-      <div className="mx-4 mt-8 h-20 w-60 text-2xl flex items-center justify-center gap-6">
-        <span className="text-transparent bg-neutral-300 h-1 w-12">..........</span>
-        <span className="text-white flex items-center justify-center">For Whom</span>
-      </div>
+      <div className='mx-4 mt-8 h-20 w-70 text-2xl flex items-center justify-center gap-2'>
+            <span className='text-transparent bg-neutral-300 h-1 w-12'>..........</span>
+            <span className='text-white flex items-center justify-center'>Who Should Attend</span>
+        </div>
 
       <div className="m-12 h-40 w-[70vw] text-7xl font-bricolage">
         <span className="text-white">
@@ -119,6 +119,8 @@ function ForWhom() {
           </div>
         </div>
       </div>
+      
+      <div className='absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-black/70 to-black pointer-events-none z-20'></div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export function Triangle() {
   useEffect(() => {
     gsap.to(figureRef.current, {
       rotation: 360,
-      duration: 10,
+      duration: 30,
       repeat: -1,
       ease: "none"
     });
@@ -46,7 +46,7 @@ export function CubeLarge() {
   useEffect(() => {
     gsap.to(figureRef.current, {
       rotation: 360,
-      duration: 10,
+      duration: 30,
       repeat: -1,
       ease: "none"
     });
@@ -82,7 +82,7 @@ export function CubeSmall() {
   useEffect(() => {
     gsap.to(figureRef.current, {
       rotation: 360,
-      duration: 10,
+      duration: 30,
       repeat: -1,
       ease: "none"
     });
@@ -117,7 +117,7 @@ export function CubeMedium() {
   useEffect(() => {
     gsap.to(figureRef.current, {
       rotation: 360,
-      duration: 10,
+      duration: 30,
       repeat: -1,
       ease: "none"
     });

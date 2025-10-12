@@ -21,12 +21,12 @@ function Footer() {
   ];
 
   return (
-    <footer className='relative w-full min-h-screen bg-black text-white overflow-hidden flex flex-col'>
+    <footer className='relative w-full min-h-screen bg-black text-white overflow-hidden flex flex-col'>      
       {/* Gradient Background Effect */}
       <div className='absolute inset-0 bg-gradient-to-b from-black via-blue-950/20 to-blue-900/30' />
       
       {/* Top Section - Social + Nav */}
-      <div className='relative z-10 px-8 lg:px-16 pt-20'>
+      <div className='relative z-10 px-8 lg:px-16 pt-32'>
         <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-b-neutral-500 pb-8'>
           {/* Social Links */}
           <div className='flex flex-col gap-6'>
@@ -100,8 +100,6 @@ function Footer() {
           GANTAVYA
         </h2>
       </div>
-
-
     </footer>
   );
 }
