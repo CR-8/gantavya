@@ -11,7 +11,7 @@ function About() {
         <div className='mx-12 flex items-center justify-between '>
             <AboutSvg/>
             <div className='text-neutral-300 w-lg text-xl font-bricolage font-bold'>
-                Gantavya 2025 is not just an event; it's a transformative experience that promises to ignite your passion for technology, foster innovation, and create lasting memories. Here's why you should be a part of this incredible journey:
+                Gantavya 2025 is not just an event; it&apos;s a transformative experience that promises to ignite your passion for technology, foster innovation, and create lasting memories. Here&apos;s why you should be a part of this incredible journey:
                 <br />
                 <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eius eos laborum.

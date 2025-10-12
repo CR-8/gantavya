@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
 
 export function Triangle() {
@@ -27,11 +28,11 @@ export function Triangle() {
         borderRadius: "inherit"
       }}
     >
-      <img
+      <Image
         src="https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp?scale-down-to=512"
-        srcSet="https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp?scale-down-to=512 512w, https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp 855w"
-        sizes="300px"
         alt="Triangle"
+        width={855}
+        height={855}
         className="w-full h-full object-cover object-center rounded-[inherit]"
       />
     </figure>
@@ -63,11 +64,11 @@ export function CubeLarge() {
         borderRadius: "inherit"
       }}
     >
-      <img
+      <Image
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
-        srcSet="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512 512w, https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp 855w"
-        sizes="650px"
         alt="Cube Large"
+        width={855}
+        height={855}
         className="w-full h-full object-cover object-center rounded-[inherit]"
       />
     </figure>
@@ -99,11 +100,11 @@ export function CubeSmall() {
         borderRadius: "inherit"
       }}
     >
-      <img
+      <Image
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
-        srcSet="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512 512w, https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp 855w"
-        sizes="120px"
         alt="Cube Small"
+        width={855}
+        height={855}
         className="w-full h-full object-cover object-center rounded-[inherit]"
       />
     </figure>
