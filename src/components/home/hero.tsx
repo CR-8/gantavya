@@ -7,10 +7,9 @@ function Hero() {
     <div className='h-screen w-screen relative'>
         <Background/>
         <div className='h-full w-full absolute bottom-0'>
-            <Bgforeground/>
+          <Bgforeground/>
         </div>
-        {/* Gradient transition to black */}
-        <div className='absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none z-30'></div>
+        <div className='absolute bottom-0 left-0 right-0 h-66 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none z-30'></div>
     </div>
   )
 }

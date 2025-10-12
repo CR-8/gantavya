@@ -7,6 +7,7 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [isButtonHovered, setIsButtonHovered] = useState(false);
+  const [isScrolledButtonHovered, setIsScrolledButtonHovered] = useState(false);
   const navRef = useRef<HTMLElement>(null);
   const navItemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
@@ -48,7 +49,7 @@ function Navbar() {
         </div>
 
         <div 
-          className={`flex items-center gap-4 transition-all duration-500 ${
+          className={`flex items-center gap-4 transition-all duration-150 ${
             isScrolled 
               ? 'opacity-0 w-0 overflow-hidden' 
               : 'opacity-100 w-auto'
@@ -66,7 +67,7 @@ function Navbar() {
               className='relative text-white px-5 py-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 text-sm font-medium overflow-hidden group'
             >
               <span 
-                className={`absolute inset-0 bg-blue-700 rounded-full transition-transform duration-500 ease-out ${
+                className={`absolute inset-0 bg-blue-700 rounded-full transition-transform duration-150 ease-out ${
                   hoveredIndex === index 
                     ? 'translate-y-0' 
                     : 'translate-y-full'
@@ -79,15 +80,15 @@ function Navbar() {
           <button 
             onMouseEnter={() => setIsButtonHovered(true)}
             onMouseLeave={() => setIsButtonHovered(false)}
-            className='px-6 py-3 font-semibold rounded-full bg-white text-blue-950 hover:bg-gray-100 transition-all duration-300 flex items-center gap-2 group'
+            className='px-6 py-3 font-semibold rounded-full bg-white text-black hover:border hover:border-neutral-200 hover:bg-blue-600 hover:text-neutral-100 transition-all duration-300 flex items-center gap-2 group'
           >
             <span className='text-base'>Register</span>
-            <span className='w-6 h-6 flex items-center justify-center rounded-full bg-blue-600 text-white transition-transform duration-300'>
-              <div className='relative w-4 h-4'>
+            <span className='w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white transition-transform duration-300'>
+              <div className='relative w-8 h-8 flex items-center justify-center'>
                 <ArrowUpRight 
-                  className={`w-4 h-4 absolute inset-0 transition-all duration-700 ${
+                  className={`w-6 h-6 flex items-center justify-center inset-0 transition-all duration-700 ${
                     isButtonHovered 
-                      ? 'opacity-100 rotate-45' 
+                      ? 'opacity-100 rotate-45 bg-neutral-100 rounded-full text-blue-600' 
                       : 'opacity-100 rotate-0'
                   }`}
                 />
@@ -95,10 +96,9 @@ function Navbar() {
             </span>
           </button>
         </div>
-
         <button 
-          onMouseEnter={() => setIsButtonHovered(true)}
-          onMouseLeave={() => setIsButtonHovered(false)}
+          onMouseEnter={() => setIsScrolledButtonHovered(true)}
+          onMouseLeave={() => setIsScrolledButtonHovered(false)}
           className={`px-6 py-3 font-semibold rounded-full bg-transparent border border-white/30 text-white hover:bg-white/10 transition-all duration-500 flex items-center gap-2 ${
             isScrolled 
               ? 'opacity-100 translate-x-0' 
@@ -110,7 +110,7 @@ function Navbar() {
             <div className='relative w-4 h-4'>
               <ArrowUpRight 
                 className={`w-4 h-4 absolute inset-0 transition-all duration-700 ${
-                  isButtonHovered 
+                  isScrolledButtonHovered 
                     ? 'opacity-100 rotate-45' 
                     : 'opacity-100 rotate-0'
                 }`}

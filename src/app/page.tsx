@@ -4,10 +4,8 @@ import About from '@/components/home/about'
 
 function Home() {
   return (
-    <div className=''>
+    <div className='overflow-hidden'>
       <Hero/>
-      <div className='absolute top-0 left-0 w-full h-full'>
-      </div>
       <About/>
     </div>
   )
