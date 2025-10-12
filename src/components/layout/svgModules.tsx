@@ -2,7 +2,6 @@
 
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
-import Image from "next/image";
 
 
 export function Triangle() {
@@ -28,16 +27,18 @@ export function Triangle() {
         borderRadius: "inherit"
       }}
     >
-      <Image
+      <img
         src="https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp?scale-down-to=512"
         alt="Triangle"
-        width={855}
-        height={855}
+        srcSet="https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp?scale-down-to=512 512w, https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp 855w"
+        sizes="300px"
         className="w-full h-full object-cover object-center rounded-[inherit]"
       />
     </figure>
   )
 }
+
+
 
 export function CubeLarge() {
   const figureRef = useRef(null);
@@ -62,11 +63,11 @@ export function CubeLarge() {
         borderRadius: "inherit"
       }}
     >
-      <Image
+      <img
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
         alt="Cube Large"
-        width={855}
-        height={855}
+        srcSet="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512 512w, https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp 855w"
+        sizes="650px"
         className="w-full h-full object-cover object-center rounded-[inherit]"
       />
     </figure>
@@ -98,11 +99,11 @@ export function CubeSmall() {
         borderRadius: "inherit"
       }}
     >
-      <Image
+      <img
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
         alt="Cube Small"
-        width={855}
-        height={855}
+        srcSet="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512 512w, https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp 855w"
+        sizes="120px"
         className="w-full h-full object-cover object-center rounded-[inherit]"
       />
     </figure>
