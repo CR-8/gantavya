@@ -39,8 +39,6 @@ export function Triangle() {
   )
 }
 
-
-
 export function CubeLarge() {
   const figureRef = useRef(null);
 
