@@ -23,8 +23,7 @@ function ForWhom() {
 
     gsap.to(marquee.children, {
       x: -marqueeWidth,
-      duration: 400,
-      speed: 50,
+      duration: 20,
       ease: "none",
       repeat: -1,
       modifiers: {
@@ -115,7 +114,7 @@ function ForWhom() {
         <div ref={marqueeRef} className="flex whitespace-nowrap">
           <div className="marquee-content inline-block">
             <span className="font-bold text-[7vw] text-neutral-50">
-              Innovation  .  Networking  .  Marketing  . 
+              Innovation . Networking . Marketing . Innovation . Networking . Marketing . Innovation . Networking . Marketing . Innovation . Networking . Marketing .
             </span>
           </div>
         </div>
