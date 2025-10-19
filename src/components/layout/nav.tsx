@@ -12,9 +12,8 @@ function Navbar() {
   const navItemsRef = useRef<(HTMLAnchorElement | null)[]>([]);
 
   const NavItems = [
-    { label: 'Speaker', href: '/speaker' },
+    { label: 'Team', href: '/team' },
     { label: 'Agenda', href: '/agenda' },
-    { label: 'Venue', href: '/venue' },
     { label: 'Contact', href: '/contact' },
   ];
 
@@ -44,8 +43,11 @@ function Navbar() {
             : 'px-8 lg:px-16 py-6 bg-transparent'
         }`}
       >
-        <div className='text-white font-bold text-3xl mr-6'>
-          <span className='italic lowercase'>gantavya</span>
+        <div
+          className="text-white font-bold text-3xl mr-6 cursor-pointer"
+          onClick={() => (window.location.href = '/')}
+        >
+          <span className="italic lowercase">gantavya</span>
         </div>
 
         <div 
@@ -79,6 +81,7 @@ function Navbar() {
 
           <button 
             onMouseEnter={() => setIsButtonHovered(true)}
+            onClick={() => window.location.href = '/register'}
             onMouseLeave={() => setIsButtonHovered(false)}
             className='px-4 py-3 font-semibold rounded-full bg-white text-black hover:border hover:border-neutral-200 hover:bg-blue-600 hover:text-neutral-100 transition-all duration-300 flex items-center gap-2 group hover:cursor-pointer'
           >

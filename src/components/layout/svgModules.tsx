@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useEffect } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 
 
@@ -27,12 +28,12 @@ export function Triangle() {
         borderRadius: "inherit"
       }}
     >
-      <img
+      <Image
         src="https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp?scale-down-to=512"
         alt="Triangle"
-        srcSet="https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp?scale-down-to=512 512w, https://framerusercontent.com/images/93NVWJJQujdEcPewVpg3Xp7ip4.webp 855w"
+        fill
         sizes="300px"
-        className="w-full h-full object-cover object-center rounded-[inherit]"
+        className="object-cover object-center rounded-[inherit]"
       />
     </figure>
   )

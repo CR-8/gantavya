@@ -1,0 +1,62 @@
+{
+  "tech-innovation": {
+    "slug": "tech-innovation",
+    "title": "Tech Innovation Workshop",
+    "category": "FOR INNOVATORS",
+    "date": "March 15, 2025",
+    "time": "10:00 AM - 5:00 PM",
+    "location": "Main Auditorium",
+    "poster": "/events/tech-innovation.jpg",
+    "shortDescription": "Explore cutting-edge technologies and innovative solutions that are shaping the future of the tech industry.",
+    "readTime": "10 min. read",
+    "participationFee": "₹500",
+    "teamSize": "1-4 members",
+    "prizePool": "₹50,000",
+    "prizes": {
+      "first": "₹25,000",
+      "second": "₹15,000",
+      "third": "₹10,000"
+    },
+    "content": "## What is Tech Innovation Workshop?\n\nThe Tech Innovation Workshop is a comprehensive program designed to introduce participants to the latest technological advancements and innovative solutions shaping our future. This hands-on workshop combines theoretical knowledge with practical applications.\n\n## Event Overview\n\nParticipants will engage in interactive sessions covering emerging technologies, including artificial intelligence, blockchain, IoT, and more. The workshop features industry experts who will share their insights and experiences.\n\n## Rules and Guidelines\n\n### Eligibility\n\n- Open to all students and tech enthusiasts\n- Teams of 1-4 members allowed\n- Prior registration is mandatory\n- Valid college ID required for entry\n\n### Workshop Structure\n\n1. **Morning Session (10:00 AM - 1:00 PM)**\n   - Introduction to emerging technologies\n   - Keynote speeches from industry leaders\n   - Interactive Q&A sessions\n\n2. **Afternoon Session (2:00 PM - 5:00 PM)**\n   - Hands-on workshops\n   - Team collaboration activities\n   - Project presentations\n\n### Code of Conduct\n\n- Maintain professionalism at all times\n- Respect fellow participants and speakers\n- No plagiarism or unfair practices\n- Follow the event schedule strictly\n- Electronic devices must be in silent mode during sessions\n\n### Important Notes\n\n> \"Innovation distinguishes between a leader and a follower.\" - Steve Jobs\n\nParticipants are encouraged to bring their laptops and necessary materials. Certificates will be provided to all attendees upon completion.\n\n## What to Bring\n\n- Laptop with necessary software installed\n- Notebook and pen for taking notes\n- Valid ID proof\n- Confirmation email (printed or digital)\n\n## Contact Information\n\nFor any queries, please contact:\n- Email: events@gantavya.com\n- Phone: +91 98765 43210"
+  },
+  "cultural-night": {
+    "slug": "cultural-night",
+    "title": "Cultural Night",
+    "category": "FOR EVERYONE",
+    "date": "March 16, 2025",
+    "time": "6:00 PM - 11:00 PM",
+    "location": "Open Arena",
+    "poster": "/events/cultural-night.jpg",
+    "shortDescription": "Experience diverse cultures through music, dance, and art performances from around the world.",
+    "readTime": "8 min. read",
+    "participationFee": "Free Entry",
+    "teamSize": "Individual or Group",
+    "prizePool": "₹30,000",
+    "prizes": {
+      "first": "₹15,000",
+      "second": "₹10,000",
+      "third": "₹5,000"
+    },
+    "content": "## Cultural Night Extravaganza\n\nCultural Night is Gantavya's signature event celebrating diversity and artistic expression. Join us for an evening filled with mesmerizing performances, traditional dances, and cultural exhibitions.\n\n## Event Highlights\n\n### Performance Categories\n\n1. **Traditional Dance**\n   - Solo and group performances welcome\n   - Duration: 5-8 minutes per performance\n   - Props and costumes allowed\n\n2. **Musical Performances**\n   - Vocal and instrumental categories\n   - Original compositions encouraged\n   - Fusion music welcome\n\n3. **Cultural Exhibitions**\n   - Art displays\n   - Traditional crafts\n   - Cultural fashion shows\n\n## Rules and Regulations\n\n### Registration Guidelines\n\n- Register at least 3 days before the event\n- Submit performance details including duration and requirements\n- Maximum 2 performances per participant\n- Group size: up to 10 members\n\n### Performance Rules\n\n- Content must be appropriate for all age groups\n- No offensive or inappropriate material\n- Stay within allocated time limits\n- Sound check must be completed 30 minutes before performance\n- All props and costumes are participant's responsibility\n\n### Judging Criteria\n\n- Creativity and originality: 30%\n- Technical execution: 30%\n- Stage presence: 20%\n- Audience engagement: 20%\n\n## Facilities Provided\n\n- Professional sound system\n- Stage lighting\n- Backstage preparation area\n- Refreshments for participants\n\n> Celebrate diversity, embrace culture!"
+  },
+  "hackathon": {
+    "slug": "hackathon",
+    "title": "Hackathon Finals 2025",
+    "category": "FOR DEVELOPERS",
+    "date": "March 20-21, 2025",
+    "time": "24 Hours (9:00 AM Day 1 - 9:00 AM Day 2)",
+    "location": "Computer Science Block",
+    "poster": "/events/hackathon.jpg",
+    "shortDescription": "24-hour coding marathon where teams compete to build innovative solutions for real-world problems.",
+    "readTime": "15 min. read",
+    "participationFee": "₹800 per team",
+    "teamSize": "2-4 members",
+    "prizePool": "₹1,00,000",
+    "prizes": {
+      "first": "₹50,000",
+      "second": "₹30,000",
+      "third": "₹20,000"
+    },
+    "content": "## Gantavya Hackathon 2025\n\nThe ultimate coding challenge where innovation meets implementation. Solve real-world problems through technology in this intensive 24-hour hackathon.\n\n## Challenge Themes\n\n### Primary Tracks\n\n1. **Healthcare Technology**\n   - Digital health solutions\n   - Medical data management\n   - Telemedicine platforms\n\n2. **Sustainable Development**\n   - Environmental monitoring\n   - Resource optimization\n   - Green technology solutions\n\n3. **Education Technology**\n   - Learning management systems\n   - Educational tools and platforms\n   - Accessibility solutions\n\n4. **Open Innovation**\n   - Any creative tech solution\n   - Emerging technology applications\n   - Social impact projects\n\n## Rules and Guidelines\n\n### Team Formation\n\n- Teams of 2-4 members\n- Cross-college teams allowed\n- All team members must register individually\n- Team leader must be designated during registration\n\n### Technical Requirements\n\n#### Allowed Technologies\n\n- Any programming language\n- Any framework or library\n- Open source tools and APIs\n- Cloud platforms (AWS, Azure, GCP)\n\n#### Prohibited Practices\n\n- Pre-written code before hackathon start\n- Plagiarism of existing projects\n- Use of paid services without disclosure\n- Violation of API terms of service\n\n### Project Submission\n\n```markdown\nSubmission must include:\n1. Source code (GitHub repository)\n2. README with setup instructions\n3. Demo video (max 3 minutes)\n4. Presentation slides (max 10 slides)\n5. Deployed application link (if applicable)\n```\n\n### Timeline\n\n**Day 1 - March 20**\n- 9:00 AM: Registration and team check-in\n- 10:00 AM: Opening ceremony and theme announcement\n- 11:00 AM: Hacking begins\n- 1:00 PM: Lunch break\n- 6:00 PM: Dinner\n- 11:00 PM: Midnight snacks\n\n**Day 2 - March 21**\n- 2:00 AM: Snacks\n- 6:00 AM: Breakfast\n- 9:00 AM: Code freeze and submission deadline\n- 10:00 AM: Project presentations begin\n- 2:00 PM: Judging and results\n- 3:00 PM: Prize distribution and closing ceremony\n\n### Judging Criteria\n\n| Criteria | Weight | Description |\n|----------|--------|-------------|\n| Innovation | 25% | Originality and creativity |\n| Technical Implementation | 25% | Code quality and architecture |\n| Impact | 20% | Real-world applicability |\n| Design | 15% | User experience and interface |\n| Presentation | 15% | Pitch and demo quality |\n\n### Facilities Provided\n\n- High-speed WiFi (1 Gbps)\n- 24/7 Power backup\n- Workstations and seating\n- All meals and refreshments\n- Mentors from industry\n- Technical support team\n- Sleeping area (optional)\n\n### Important Notes\n\n> **Code of Conduct:** Participants must maintain professionalism, respect diversity, and follow ethical coding practices.\n\n### Prizes and Perks\n\n- Cash prizes for top 3 teams\n- Internship opportunities with sponsor companies\n- GitHub Pro subscription (1 year)\n- Interview fast-track with partner companies\n- Certificates for all participants\n\n## What to Bring\n\n- **Mandatory:**\n  - Laptop with charger\n  - Valid ID proof\n  - Registration confirmation\n\n- **Recommended:**\n  - Power bank\n  - Mouse and keyboard\n  - Extension cord\n  - Sleeping bag (for rest area)\n  - Personal toiletries\n\n## Contact and Support\n\nTechnical queries: tech@gantavya.com\nGeneral queries: events@gantavya.com\n24/7 Helpline: +91 98765 43210"
+  }
+}
