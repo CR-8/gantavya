@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -14,13 +14,36 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
+import { RegistrationForm } from '@/components/register/form';
 
 function EventPage() {
   const params = useParams();
   const slug = params.slug as string;
-  
-  // Use middleware to get sanitized event data
-  const event: EventData | null = getEventBySlug(slug);
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [event, setEvent] = useState<EventData | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchEvent() {
+      setLoading(true);
+      const eventData = await getEventBySlug(slug);
+      setEvent(eventData);
+      setLoading(false);
+    }
+    
+    fetchEvent();
+  }, [slug]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-black flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white mx-auto mb-4"></div>
+          <p className="text-neutral-400">Loading event...</p>
+        </div>
+      </div>
+    );
+  }
 
   if (!event) {
     return (
@@ -180,6 +203,7 @@ function EventPage() {
                     // Use Next.js Image component for better performance
                     if (sanitizedSrc && sanitizedSrc.startsWith('/')) {
                       return (
+                        // eslint-disable-next-line @next/next/no-img-element
                         <img 
                           src={sanitizedSrc} 
                           alt={alt || 'Event image'} 
@@ -216,7 +240,10 @@ function EventPage() {
               {/* Register Now Card */}
               <div className="p-6 rounded-2xl bg-blue-600 hover:bg-blue-700 transition-colors">
                 <h3 className="text-xl font-bold mb-4">Register Now</h3>
-                <button className="w-full py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-neutral-100 transition-colors">
+                <button 
+                  onClick={() => setIsFormOpen(true)}
+                  className="w-full py-3 bg-white text-blue-600 rounded-lg font-semibold hover:bg-neutral-100 transition-colors"
+                >
                   Register for Event
                 </button>
               </div>
@@ -308,6 +335,17 @@ function EventPage() {
           </div>
         </div>
       </div>
+
+      {/* Registration Form Modal */}
+      {isFormOpen && (
+        <RegistrationForm
+          eventTitle={event.title}
+          eventSlug={event.slug}
+          participationFee={event.participationFee}
+          teamSize={event.teamSize}
+          onClose={() => setIsFormOpen(false)}
+        />
+      )}
     </div>
   );
 }

@@ -64,6 +64,7 @@ export function CubeLarge() {
         borderRadius: "inherit"
       }}
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
         alt="Cube Large"
@@ -100,6 +101,7 @@ export function CubeSmall() {
         borderRadius: "inherit"
       }}
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
         alt="Cube Small"
@@ -135,9 +137,10 @@ export function CubeMedium() {
         borderRadius: "inherit"
       }}
     >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512"
-        alt="Cube Small"
+        alt="Cube Medium"
         srcSet="https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp?scale-down-to=512 512w, https://framerusercontent.com/images/wX62SMRMN1v1X6SFoJaoNdwo.webp 855w"
         sizes="320px"
         className="w-full h-full object-cover object-center rounded-[inherit]"

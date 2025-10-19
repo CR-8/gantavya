@@ -1,15 +1,25 @@
 "use client";
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import EventCard from './card'
-import { getAllEvents } from '@/lib/eventMiddleware'
+import { getAllEvents, type EventData } from '@/lib/eventMiddleware'
 
 function Grid() {
     const router = useRouter();
+    const [events, setEvents] = useState<EventData[]>([]);
+    const [loading, setLoading] = useState(true);
 
-    // Get all events using sanitization middleware
-    const events = getAllEvents();
+    useEffect(() => {
+        async function fetchEvents() {
+            setLoading(true);
+            const eventsData = await getAllEvents();
+            setEvents(eventsData);
+            setLoading(false);
+        }
+        
+        fetchEvents();
+    }, []);
 
     // Icon mapping for different event categories
     const getIcon = (category: string) => {
@@ -56,21 +66,27 @@ function Grid() {
                 </span>
             </div>
 
-            <div className='max-w-9xl mx-auto px-8 lg:px-16 py-12'>
-                {/* Cards Grid - 2 columns on large screens, 1 on small */}
-                <div className='grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 gap-6 mx-auto'>
-                    {events.map((event) => (
-                        <EventCard 
-                            key={event.slug}
-                            category={`FOR ${event.category.toUpperCase()} ENTHUSIASTS`}
-                            title={event.title}
-                            description={event.shortDescription}
-                            icon={getIcon(event.category)}
-                            onClick={() => router.push(`/register/${event.slug}`)}
-                        />
-                    ))}
+            {loading ? (
+                <div className="flex items-center justify-center py-20">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-white"></div>
                 </div>
-            </div>
+            ) : (
+                <div className='max-w-9xl mx-auto px-8 lg:px-16 py-12'>
+                    {/* Cards Grid - 2 columns on large screens, 1 on small */}
+                    <div className='grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-2 gap-6 mx-auto'>
+                        {events.map((event) => (
+                            <EventCard 
+                                key={event.slug}
+                                category={`FOR ${event.category.toUpperCase()} ENTHUSIASTS`}
+                                title={event.title}
+                                description={event.shortDescription}
+                                icon={getIcon(event.category)}
+                                onClick={() => router.push(`/register/${event.slug}`)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
